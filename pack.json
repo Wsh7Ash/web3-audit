@@ -1,0 +1,208 @@
+{
+  "name": "web3-audit",
+  "version": "1.0.0",
+  "category": "web3-security",
+  "skill_count": 50,
+  "skills": [
+    {
+      "slug": "access-initializer-frontrun",
+      "sha256": "93a9f3637f190f49a321ac1a24a90d51036834c6a92cb6c207971b740d079d38"
+    },
+    {
+      "slug": "access-missing-modifier",
+      "sha256": "1ed485b2542e74cf3ad982d2f0eff880ad74aa3fb0a252553e7ea444821c66f7"
+    },
+    {
+      "slug": "access-owner-renounce",
+      "sha256": "d5615c8a22005533d9339bcb87434ec491efa59c254901837e90815e4b69aa30"
+    },
+    {
+      "slug": "access-role-grant-path",
+      "sha256": "529496bcaab5082b6705e1937a267827a4a38cc7aa64f21f613e8a5fd5b61b38"
+    },
+    {
+      "slug": "access-signature-replay",
+      "sha256": "8ea7e40b04759267fb61b6294c838eaafa67ff57a8e99349a9562df3ab9deb92"
+    },
+    {
+      "slug": "arithmetic-overflow-unchecked",
+      "sha256": "6880787076bfbf9ba044acc64ddb5253a935cb93b3be79cff1d97d79dd027ba9"
+    },
+    {
+      "slug": "arithmetic-precision-loss",
+      "sha256": "dd186281293ecf8277b55113625cdc2d30c497ec2832cfbc54a5c9aa13cee497"
+    },
+    {
+      "slug": "arithmetic-rounding-direction",
+      "sha256": "c71bfa880439d49f0b079ad32cc8b8c586bd1db7e567bb5eacfec93bad84b437"
+    },
+    {
+      "slug": "arithmetic-share-inflation",
+      "sha256": "996be85c9a528928846eabe188627d46791549d28c2ce46bce9fc33910a3e5e4"
+    },
+    {
+      "slug": "invariants-check-after-every-path",
+      "sha256": "85dd6c9a479976d494e9413edc7265e2c5626656b3b59b844e9080d434ea42a1"
+    },
+    {
+      "slug": "invariants-differential-testing",
+      "sha256": "fb9b9558a7bc37a7552250222b4f907a9ba725c59e1e950dac4660afdb965ef6"
+    },
+    {
+      "slug": "invariants-fuzz-handlers",
+      "sha256": "2c9e9ce844b05ba1325d8d39342dc804d7f4c1573778f1d9960c4c2810b98a40"
+    },
+    {
+      "slug": "invariants-write-in-solidity",
+      "sha256": "6d82c5a4adb6166bda04e6abbc7841a94439042e1366225efc933231db58cd94"
+    },
+    {
+      "slug": "model-accounting-identity",
+      "sha256": "0e7e7d6efe2cd056cafa8d0772155167b155d64510cc3bf3aa46ce1d8c98a3be"
+    },
+    {
+      "slug": "model-privilege-graph",
+      "sha256": "164f359faad7dff801742345985a4d612739e61fe973bd340d727cae635b9a62"
+    },
+    {
+      "slug": "model-state-machine",
+      "sha256": "6a4fd539587d64b370b3e686a6885bdc874278370193795ae4ed6dda3582b93e"
+    },
+    {
+      "slug": "oracle-decimal-mismatch",
+      "sha256": "4e28eece4505a700e15630b030f304bc987622f935ed4e49f1df413a46773181"
+    },
+    {
+      "slug": "oracle-fallback-path",
+      "sha256": "236d23069264ab8b30f848eb899e5b8ed8f4f22dac054c9f7d610a93cbba88b5"
+    },
+    {
+      "slug": "oracle-stale-price",
+      "sha256": "1e224054bf4f5098819f127ab0f635993c9492f76e8007d983406bdedb2bf920"
+    },
+    {
+      "slug": "oracle-twap-manipulation",
+      "sha256": "de1bb82758bf309f8ec5cef4e232f776aa98974444519362a7a6f82bf5b382f9"
+    },
+    {
+      "slug": "randomness-block-values",
+      "sha256": "b7e146c3ffc487785eb7e1fb8b2b0b89d0e4edcc526899fffc0f1e6456ece548"
+    },
+    {
+      "slug": "randomness-commit-reveal",
+      "sha256": "2311e1f6a5111c6de6cd2edf981cfc98cbbf273d6ae5966205de68f73d396073"
+    },
+    {
+      "slug": "randomness-oracle-vrf",
+      "sha256": "e4f41d02af8412998cddc4adf84248e85ce8a892d8b14286647ebf111ab35098"
+    },
+    {
+      "slug": "recon-bytecode-match",
+      "sha256": "8e6f22126e8fa5372362bf12649b01503290f90299fbcb3b2246c9fbbd86b93a"
+    },
+    {
+      "slug": "recon-scope-contracts",
+      "sha256": "f1046d0dcc3f12fcd1dd2849896eb4a24890837cec847d761894d76033c6f531"
+    },
+    {
+      "slug": "recon-value-flow",
+      "sha256": "2b768124dc0acb63e33da0a183ca054f87b8560d97ba993c628f0bdf4bc8c004"
+    },
+    {
+      "slug": "reentrancy-checks-effects-interactions",
+      "sha256": "860a81da1f5e002e339cf2dc5d460848885cb4defef3a79b33bb9e4e15e332b0"
+    },
+    {
+      "slug": "reentrancy-cross-function",
+      "sha256": "ceeeacf27dbf834e2749259161c252659c8ab303658a9e492c3cc66c7108dc17"
+    },
+    {
+      "slug": "reentrancy-flashloan-context",
+      "sha256": "0fa7cc01cc75bbef244e6b6875a8450857b7b7ea14c36421c5474cfd1591d39f"
+    },
+    {
+      "slug": "reentrancy-read-only",
+      "sha256": "a73a111012ee7e428f32f89e0d3ba36c475a7a9b3d38094922036e4f8990dcbb"
+    },
+    {
+      "slug": "reentrancy-trace-external-calls",
+      "sha256": "015637288f33da15bf7ca9872be2b399fde263f222ffcd07fc6459706f3a0d07"
+    },
+    {
+      "slug": "reporting-finding-template",
+      "sha256": "478f961967ef26befc4b61d5de5eba7ac2d3a505f82c138f5438ecd974e28287"
+    },
+    {
+      "slug": "reporting-fix-verification",
+      "sha256": "aa19a6446bbef8c95475d8baec6656ec34473f5e786760fb710937f718641de3"
+    },
+    {
+      "slug": "reporting-scanner-leads",
+      "sha256": "7f4582b720a521ffe7bc0dc1d44b6abbf4d5792a073fda82954f4b36bd8cdeb3"
+    },
+    {
+      "slug": "reporting-severity-basis",
+      "sha256": "3b485ae1d5bbacd322f8bec74c3dbda8cd80ddd432ae2d7f142e4316097a9871"
+    },
+    {
+      "slug": "storage-array-removal",
+      "sha256": "ac87755ef513a2ec68ff71d26dd4cbd5ba805c8c5f61da2dc602edb1b13c8ca6"
+    },
+    {
+      "slug": "storage-delete-gap",
+      "sha256": "db7c6e8a8c79064437b0126d11fd310f7384e130ab5f7fb7f0a930cb53eb2250"
+    },
+    {
+      "slug": "storage-layout-collision",
+      "sha256": "14dc39fa6a9f2a1cfa8bc6eb07ba8c57c883735910a3db74174952193f3fd6d8"
+    },
+    {
+      "slug": "storage-struct-packing",
+      "sha256": "7dea7e3d861b28507dd323f197ff3f767cc42fdc9cb710b5fb5ed896117aaf74"
+    },
+    {
+      "slug": "testing-fork-reproduction",
+      "sha256": "bcb5ee22a52d80f8d2e582e2cc4e436a9bca419925c3118cda3365656e5c77ea"
+    },
+    {
+      "slug": "testing-gas-and-revert-profile",
+      "sha256": "5b13c1b07c48c979aa79dc5a1e0a245ebb97384222161f5689effce9c4ea769a"
+    },
+    {
+      "slug": "testing-minimal-sequence",
+      "sha256": "7e95cacb19a7f858e00df72bfb3cb540d79017d5868105927908d7ba2a722f24"
+    },
+    {
+      "slug": "testing-negative-control",
+      "sha256": "1b6afb80b0df096ed91c2547b444889ac42b352af1a262d899e6841c08203e07"
+    },
+    {
+      "slug": "testing-state-diff-assertions",
+      "sha256": "5a568c463f9191a0642452e8db838010f7e34f0a805c221b82bd5f1ddf02780f"
+    },
+    {
+      "slug": "triage-duplicate-advisory",
+      "sha256": "b2e7d992fade5b516cca3d3e92732bac161b1b5f433a8518b2f3263384893864"
+    },
+    {
+      "slug": "triage-exploitability-verdict",
+      "sha256": "dc4809caa0a2b9c9007ddb3865e0c21ba68e1bcd5242122574919d92d1eae182"
+    },
+    {
+      "slug": "upgrade-implementation-lock",
+      "sha256": "b8a937417693de38e40c861250b4df09dd460c9819a39df3b966ac40c5b43ead"
+    },
+    {
+      "slug": "upgrade-initializer-reinit",
+      "sha256": "2bb66145fb4d1e2e2daa59fb96366ab42fa1a3e8f12d1c56850ccc265204c8ac"
+    },
+    {
+      "slug": "upgrade-selector-collision",
+      "sha256": "bda14249d5184b56c2c3ad74c94dd6e6930d6976f579d7ef3be73cb9e5f12845"
+    },
+    {
+      "slug": "upgrade-storage-gap",
+      "sha256": "4f7f7dc81ddc5c56d8f1aa646af3206fa371c4cbe44eb6aa50e5785ad005c76d"
+    }
+  ]
+}

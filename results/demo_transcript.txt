@@ -1,0 +1,55 @@
+$ web3-audit validate
+50/50 skills valid
+
+$ web3-audit scan examples/vulnerable.sol
+examples/vulnerable.sol:2  LOW    floating-pragma: floating pragma compiles under future compiler versions with different semantics
+    pragma solidity ^0.7.6;
+examples/vulnerable.sol:10  HIGH   reentrancy-order: external call on line 10 precedes the state write on line 11
+    (bool ok, ) = msg.sender.call{value: amount}("");
+examples/vulnerable.sol:10  HIGH   unchecked-call: low-level call return value is not checked, so a failed call continues execution
+    (bool ok, ) = msg.sender.call{value: amount}("");
+examples/vulnerable.sol:14  MEDIUM privileged-function: state-changing privileged function has no visible access modifier in its declaration or first lines
+    function setOwner(address next) external {
+examples/vulnerable.sol:19  MEDIUM weak-randomness: block values used with modulo are predictable or miner-influenced and are not a randomness source
+    return uint256(keccak256(abi.encodePacked(block.timestamp, block.difficulty))) % 100;
+examples/vulnerable.sol:23  LOW    timestamp-comparison: exact block.timestamp comparison is miner-influenced and should be a range check
+    return block.timestamp > 1700000000;
+summary: info=0, low=2, medium=2, high=2, total=6
+
+$ web3-audit scan examples/safe.sol
+no findings
+
+$ web3-audit scan examples/safe.sol --fail-on high; echo exit=$?
+exit=0
+
+$ web3-audit scan examples/vulnerable.sol --fail-on high; echo exit=$?
+exit=1
+
+$ web3-audit scan examples --min-severity high --json
+{
+  "findings": [
+    {
+      "rule": "reentrancy-order",
+      "severity": "high",
+      "path": "examples/vulnerable.sol",
+      "line": 10,
+      "message": "external call on line 10 precedes the state write on line 11",
+      "snippet": "(bool ok, ) = msg.sender.call{value: amount}(\"\");"
+    },
+    {
+      "rule": "unchecked-call",
+      "severity": "high",
+      "path": "examples/vulnerable.sol",
+      "line": 10,
+      "message": "low-level call return value is not checked, so a failed call continues execution",
+      "snippet": "(bool ok, ) = msg.sender.call{value: amount}(\"\");"
+    }
+  ],
+  "summary": {
+    "info": 0,
+    "low": 0,
+    "medium": 0,
+    "high": 2,
+    "total": 2
+  }
+}
